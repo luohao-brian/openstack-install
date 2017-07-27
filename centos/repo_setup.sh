@@ -14,5 +14,6 @@ cat /etc/redhat-release | grep "CentOS Linux release 7" || {
     mv /etc/yum.repos.d /etc/yum.repos.d.old
 }
 
+echo "Setup packages repo"
 cp -rf yum.repos.d /etc && yum update -y
 
